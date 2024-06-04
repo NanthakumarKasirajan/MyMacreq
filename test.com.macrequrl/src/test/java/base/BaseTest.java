@@ -14,7 +14,7 @@ import pages.MacreqLogin;
 public class BaseTest {
 	
 	public static WebDriver driver;
-	public MacreqLogin login;
+	//public MacreqLogin login;
 	//public AddRequirement addreq;
 	
 	
@@ -28,7 +28,7 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
 		
-		login = PageFactory.initElements(driver, MacreqLogin.class);
+		//login = PageFactory.initElements(driver, MacreqLogin.class);
 		//addreq=PageFactory.initElements(driver, AddRequirement.class);
 	}
 

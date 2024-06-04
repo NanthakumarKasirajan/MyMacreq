@@ -2,22 +2,22 @@
 <testng-results ignored="3" total="8" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-03T18:12:28 IST" name="Practice Suite" finished-at="2024-06-03T18:13:27 IST" duration-ms="58788">
+  <suite started-at="2024-06-04T17:06:05 IST" name="Practice Suite" finished-at="2024-06-04T17:07:13 IST" duration-ms="67915">
     <groups>
     </groups>
-    <test started-at="2024-06-03T18:12:28 IST" name="Test Basics 1" finished-at="2024-06-03T18:13:27 IST" duration-ms="58788">
+    <test started-at="2024-06-04T17:06:05 IST" name="Test Basics 1" finished-at="2024-06-04T17:07:13 IST" duration-ms="67915">
       <class name="tests.TestViewRequirement">
-        <test-method signature="testViewRequirment()[pri:2, instance:tests.TestViewRequirement@909217e]" started-at="2024-06-03T18:13:14 IST" name="testViewRequirment" finished-at="2024-06-03T18:13:22 IST" duration-ms="8256" status="PASS">
+        <test-method signature="testViewRequirment()[pri:2, instance:tests.TestViewRequirement@909217e]" started-at="2024-06-04T17:06:59 IST" name="testViewRequirment" finished-at="2024-06-04T17:07:08 IST" duration-ms="8428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testViewRequirment -->
-        <test-method signature="testlogout()[pri:3, instance:tests.TestViewRequirement@909217e]" started-at="2024-06-03T18:13:22 IST" name="testlogout" finished-at="2024-06-03T18:13:25 IST" duration-ms="2251" status="PASS">
+        <test-method signature="testlogout()[pri:3, instance:tests.TestViewRequirement@909217e]" started-at="2024-06-04T17:07:08 IST" name="testlogout" finished-at="2024-06-04T17:07:10 IST" duration-ms="2300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testlogout -->
       </class> <!-- tests.TestViewRequirement -->
       <class name="tests.TestMacreqAction">
-        <test-method signature="macreqLogin()[pri:4, instance:tests.TestMacreqAction@18271936]" started-at="2024-06-03T18:13:25 IST" name="macreqLogin" finished-at="2024-06-03T18:13:27 IST" duration-ms="2188" status="FAIL">
+        <test-method signature="macreqLogin()[pri:4, instance:tests.TestMacreqAction@18271936]" started-at="2024-06-04T17:07:10 IST" name="macreqLogin" finished-at="2024-06-04T17:07:13 IST" duration-ms="2440" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null]]>
@@ -61,22 +61,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </reporter-output>
         </test-method> <!-- macreqLogin -->
       </class> <!-- tests.TestMacreqAction -->
-      <class name="tests.LoginVerification">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginVerification@d737b89]" started-at="2024-06-03T18:12:20 IST" name="setup" finished-at="2024-06-03T18:12:28 IST" duration-ms="8184" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testloginVerification()[pri:0, instance:tests.LoginVerification@d737b89]" started-at="2024-06-03T18:12:28 IST" name="testloginVerification" finished-at="2024-06-03T18:12:32 IST" duration-ms="4203" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testloginVerification -->
-      </class> <!-- tests.LoginVerification -->
       <class name="tests.TestAddRequirement">
-        <test-method signature="testAddRequirmentVerification()[pri:1, instance:tests.TestAddRequirement@72035809]" started-at="2024-06-03T18:12:32 IST" name="testAddRequirmentVerification" finished-at="2024-06-03T18:13:14 IST" duration-ms="41855" status="PASS">
+        <test-method signature="testAddRequirmentVerification()[pri:1, instance:tests.TestAddRequirement@72035809]" started-at="2024-06-04T17:06:10 IST" name="testAddRequirmentVerification" finished-at="2024-06-04T17:06:59 IST" duration-ms="49986" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddRequirmentVerification -->
       </class> <!-- tests.TestAddRequirement -->
+      <class name="tests.LoginVerification">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginVerification@d737b89]" started-at="2024-06-04T17:05:47 IST" name="setup" finished-at="2024-06-04T17:06:05 IST" duration-ms="18240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testloginVerification()[pri:0, instance:tests.LoginVerification@d737b89]" started-at="2024-06-04T17:06:05 IST" name="testloginVerification" finished-at="2024-06-04T17:06:09 IST" duration-ms="4685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testloginVerification -->
+      </class> <!-- tests.LoginVerification -->
     </test> <!-- Test Basics 1 -->
   </suite> <!-- Practice Suite -->
 </testng-results>

@@ -63,6 +63,8 @@ public class AddRequirement extends BaseTest
 		public static WebElement selectIncoTerm;
 		@FindBy(xpath = "//*[@formcontrolname='deliveryLocation']")
 		public static WebElement clickDeliveryLocation;
+		@FindBy(xpath = "//*[text()='111 Test Address']")
+		public static WebElement selectlocation;
 		@FindBy(xpath = "//*[text()='+ Add New Location ']")
 		public static WebElement selectNewLocation;
 		@FindBy(xpath = "//*[@formcontrolname='location']")
@@ -98,7 +100,7 @@ public class AddRequirement extends BaseTest
 
 		// File = C:\Users\Conneqt\Desktop\Jan Upload - 2904.xlsx
 
-		StringSelection path = new StringSelection("C:\\Users\\Conneqt\\Desktop\\Jan Upload - 2904.xlsx");
+		StringSelection path = new StringSelection("C:\\Users\\Conneqt\\Desktop\\OSC_upload_template-UAT.xlsx");
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(path, null);
 
 		Robot robot = new Robot();
@@ -108,7 +110,7 @@ public class AddRequirement extends BaseTest
 		robot.keyRelease(KeyEvent.VK_V);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 		js.executeScript("window.scrollBy(0,300)");
 		Thread.sleep(2000);
 		enterQuantity.sendKeys("10");
@@ -136,9 +138,12 @@ public class AddRequirement extends BaseTest
 		js.executeScript("window.scrollBy(0,300)");
 		Thread.sleep(2000);
 		clickDeliveryLocation.click();
-		selectNewLocation.click();
-		enterLocation.sendKeys("45/28,KK nagar,Coimbatore-876776");
-		addAddress.click();
+		Thread.sleep(2000);
+		selectlocation.click();
+		Thread.sleep(2000);
+		//selectNewLocation.click();
+		//enterLocation.sendKeys("45/29,KK nagar,Coimbatore-876776");
+		//addAddress.click();
 		Thread.sleep(2000);
 		save.click();
 		Thread.sleep(3000);
