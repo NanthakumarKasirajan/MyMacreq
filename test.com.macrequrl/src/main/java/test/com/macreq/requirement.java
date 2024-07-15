@@ -16,6 +16,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class requirement {
 
 	// Login
@@ -101,13 +103,20 @@ public class requirement {
 	@BeforeTest
 	public void OpenMacreq() throws InterruptedException {
 
-		ChromeOptions option = new ChromeOptions();
-		option.addArguments("--remote-allow-origins=*");
-		driver = new ChromeDriver(option);
+		/*
+		 * ChromeOptions option = new ChromeOptions();
+		 * option.addArguments("--remote-allow-origins=*"); driver = new
+		 * ChromeDriver(option);
+		 * driver.get("https://macreq-test.conneqtcorp.com/login");
+		 * driver.manage().window().maximize(); Thread.sleep(3000);
+		 */
+
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 		driver.get("https://macreq-test.conneqtcorp.com/login");
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
-
+		
 		PageFactory.initElements(driver, requirement.class);
 
 	}

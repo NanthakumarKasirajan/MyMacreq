@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.AddRequirement;
 import pages.MacreqLogin;
 
@@ -21,12 +22,20 @@ public class BaseTest {
 	@BeforeSuite
 	public void setup() throws InterruptedException {
 		
-		ChromeOptions option = new ChromeOptions();
-		option.addArguments("--remote-allow-origins=*");
-		driver = new ChromeDriver(option);
+		/*
+		 * ChromeOptions option = new ChromeOptions();
+		 * option.addArguments("--remote-allow-origins=*"); driver = new
+		 * ChromeDriver(option);
+		 * driver.get("https://macreq-test.conneqtcorp.com/login");
+		 * driver.manage().window().maximize(); Thread.sleep(3000);
+		 */
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 		driver.get("https://macreq-test.conneqtcorp.com/login");
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
+		
+		
 		
 		//login = PageFactory.initElements(driver, MacreqLogin.class);
 		//addreq=PageFactory.initElements(driver, AddRequirement.class);

@@ -3,12 +3,31 @@
 <suite name="Failed suite [Practice Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test Basics 1(failed)">
     <classes>
+      <class name="tests.TestViewRequirement">
+        <methods>
+          <include name="setup"/>
+          <include name="testlogout"/>
+          <include name="testViewRequirment"/>
+        </methods>
+      </class> <!-- tests.TestViewRequirement -->
       <class name="tests.TestMacreqAction">
         <methods>
           <include name="setup"/>
           <include name="macreqLogin"/>
         </methods>
       </class> <!-- tests.TestMacreqAction -->
+      <class name="tests.TestAddRequirement">
+        <methods>
+          <include name="setup"/>
+          <include name="testAddRequirmentVerification"/>
+        </methods>
+      </class> <!-- tests.TestAddRequirement -->
+      <class name="tests.LoginVerification">
+        <methods>
+          <include name="setup"/>
+          <include name="testloginVerification"/>
+        </methods>
+      </class> <!-- tests.LoginVerification -->
     </classes>
   </test> <!-- Test Basics 1(failed) -->
 </suite> <!-- Failed suite [Practice Suite] -->
